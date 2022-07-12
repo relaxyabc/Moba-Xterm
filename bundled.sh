@@ -8,4 +8,4 @@ go install fyne.io/fyne/v2/cmd/fyne@latest
 # bundle static resource
 fyne bundle -package asset asset/logo.png > asset/bundled.go
 # append static resource
-fyne bundle -package asset asset/image.png >> asset/bundled.go
+# fyne bundle -package asset asset/image.png >> asset/bundled.go

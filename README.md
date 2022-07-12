@@ -25,11 +25,16 @@
        wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
        rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz
        export PATH=$PATH:/usr/local/go/bin
+    
+    4: 配置 go 环境
        go env -w GO111MODULE=on
        go env -w GOPROXY=https://goproxy.cn,direct
 
-    4: 源码下载 (或者自行下载源码包)
+    5: 源码下载 (或者自行下载源码压缩包)
        git clone https://github.com/luckylocode/Moba-Xterm.git
+
+### 更新: docker 运行时 代理 将不再是必选项
+    代码仓库已基于 go mod vendor 重建,fyne-cross 编译时,将不在需要通过科学上网拉取最新依赖.
 
 ### 网络准备
     1: 宿主机允许 科学上网允许来自局域网的连接
