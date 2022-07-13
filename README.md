@@ -16,7 +16,7 @@
     3 : linux 未尝试, 本编译基于  Windows10(11) -- wsl2 -- docker
 
 ### wsl2 环境 准备
-    1: windows 安装 https://docs.microsoft.com/zh-cn/windows/wsl/install-manual   
+    1: windows wsl2 安装 https://docs.microsoft.com/zh-cn/windows/wsl/install-manual   
     
     2: 基于 wsl2 安装docker,推荐 第一种方式
        https://zhuanlan.zhihu.com/p/421998834
@@ -36,7 +36,7 @@
 ### 更新: docker 运行时 代理 将不再是必选项
     代码仓库已基于 go mod vendor 重建,fyne-cross 编译时,将不在需要通过科学上网拉取最新依赖.
 
-### 网络准备
+### 网络准备 [可以跳过]
     1: 宿主机允许 科学上网允许来自局域网的连接
     
     2: wsl2 配置网络代理,走宿主机的 科学上网(以 v2ray 为例; 科学上网允许来自局域网的连接 !!!),
