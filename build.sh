@@ -3,11 +3,13 @@
 echo "======= start remove go mod and vendor ======="
 rm -rf go.mod go.sum vendor/
 echo "======= remove go mod and vendor end   ======="
+
 # rebuild mod and init vendor
 echo "======= start rebuild go mod and init vendor ======="
-go mod init mobaxterm && go mod tidy && go mod vendor
+go mod init mobaxterm  >> /dev/null 2>&1 && go mod tidy >> /dev/null 2>&1 && go mod vendor
 echo "======= rebuild go mod and init vendor end   ======="
 # install fyne-cross
+
 echo "======= start install fyne-cross ======="
 go install github.com/fyne-io/fyne-cross@latest
 echo "======= fyne-cross installed     ======="
