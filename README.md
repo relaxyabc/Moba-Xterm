@@ -19,7 +19,7 @@
     1: windows wsl2 安装 https://docs.microsoft.com/zh-cn/windows/wsl/install-manual   
     
     2: 基于 wsl2 安装docker,推荐 第一种方式
-       https://zhuanlan.zhihu.com/p/421998834
+       https://zhuanlan.zhihu.com/p/148511634
     
     3: 安装 golang 
        wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz

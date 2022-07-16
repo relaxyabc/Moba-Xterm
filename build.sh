@@ -17,6 +17,8 @@ echo "======= fyne-cross installed     ======="
 
 echo "======= start build windows executable file by fyne-cross ======="
 sudo ~/go/bin/fyne-cross windows -arch=* -env "-mod=vendor"
+echo ""
+
 # build linux executable file
 echo "======= start build linux executable file by fyne-cross ======="
 sudo ~/go/bin/fyne-cross linux -arch=* -tags "GUI" -env "-mod=vendor"
